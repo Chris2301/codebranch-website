@@ -1,0 +1,10 @@
+{{ $headerCSS := resources.Get "css/header.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $headerCSS.RelPermalink }}" integrity="{{ $headerCSS.Data.Integrity }}">
+
+<header>
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+</header>

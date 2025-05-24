@@ -1,0 +1,10 @@
+{{ $footerCSS := resources.Get "css/footer.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $footerCSS.RelPermalink }}" integrity="{{ $footerCSS.Data.Integrity }}">
+
+<footer class="footer">
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+</footer>
