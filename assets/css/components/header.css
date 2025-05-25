@@ -1,0 +1,22 @@
+header {
+    background-color: hsl(0, 0%, 20%);
+    padding: 1rem 0;
+    display: flex;
+}
+
+.nav {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+    transition: background-color 0.8s ease;
+
+    &:hover {
+        background-color: hsl(0, 0%, 30%);;
+    }
+}

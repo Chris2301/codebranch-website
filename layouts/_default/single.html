@@ -1,7 +1,10 @@
-{{ $singleCSS := resources.Get "css/single.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $singleCSS.RelPermalink }}" integrity="{{ $singleCSS.Data.Integrity }}">
-
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<div>{{ .Content }}</div>
+{{ $styleCSS := resources.Get "css/style.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styleCSS.RelPermalink }}" integrity="{{ $styleCSS.Data.Integrity }}">
+
+
+<div class="main-wrapper">
+    <h1>{{ .Title }}</h1>
+    <div>{{ .Content }}</div>
+</div>
 {{ end }}
