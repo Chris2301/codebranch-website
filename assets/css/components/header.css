@@ -1,13 +1,21 @@
 header {
     background-color: hsl(0, 0%, 20%);
-    padding: 1rem 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav {
+    min-height: 64px;
     max-width: 1280px;
     width: 100%;
-    margin: 0 auto;
+    margin: 7px auto;
+    display: flex;
+    align-items: center;
 }
 
 .nav-button {
@@ -18,5 +26,40 @@ header {
 
     &:hover {
         background-color: hsl(0, 0%, 30%);;
+    }
+}
+
+#hamburger-options {
+    position: absolute;
+    top: 100%; /* just below the header */
+    left: 0;
+    right: 0;
+    background-color: hsl(0, 0%, 20%);
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+#hamburger-options.open {
+    display: flex;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Small devices such as phones (768px or lesser) */
+@media only screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .mobile-only {
+        display: flex;
     }
 }

@@ -1,11 +1,24 @@
 {{ $headerCSS := resources.Get "css/components/header.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $headerCSS.RelPermalink }}" integrity="{{ $headerCSS.Data.Integrity }}">
 
+{{ $js := resources.Get "js/header.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 <header>
     <nav class="nav">
         <a class="nav-button" href="/">Home</a>
+
+        <a class="nav-button desktop-only" href="/about/">About</a>
+        <a class="nav-button desktop-only" href="/contact/">Contact</a>
+
+        <a class="nav-button mobile-only" href="javascript:void(0);" onclick="toggle()">
+            <i class="fa fa-bars fa-2xl"></i>
+        </a>
+    </nav>
+
+<!--    TODO invisible when bigger than-->
+<!--    TODO maybe generic so we can load options from md file?-->
+    <div class="hamburger-options mobile-only" id="hamburger-options">
         <a class="nav-button" href="/about/">About</a>
         <a class="nav-button" href="/contact/">Contact</a>
-        <i class="fa fa-bars fa-2xl nav-button"></i>
-    </nav>
+    </div>
 </header>

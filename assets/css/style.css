@@ -15,10 +15,8 @@ main {
     max-width: 1280px;
     width: 100%;
     background-color: antiquewhite;
-    margin: 0 auto;
+    margin: 64px auto 0;
 }
-
-/* Default: Large devices such as laptops, computers (greater than 1024px) *
 
 /* Medium devices such as tablets (1024px or lesser) */
 @media only screen and (max-width: 1024px) {
