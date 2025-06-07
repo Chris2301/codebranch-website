@@ -1,10 +1,22 @@
 {{ $footerCSS := resources.Get "css/components/footer.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $footerCSS.RelPermalink }}" integrity="{{ $footerCSS.Data.Integrity }}">
 
-<footer class="footer">
-    <nav class="footer-nav">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
-    </nav>
+{{ $footer := site.GetPage "meta/footer" }}
+<footer>
+    <div class="footer-group-wrapper">
+        {{ range $footer.Params.links }}
+        <div class="footer-group">
+            <p>{{ .groupName }}</p>
+            {{ range .fields }}
+                {{ if .iconName }}
+                    <a href="{{ .url }}"><i class="{{ .iconName }}"></i>{{ .name }}</a>
+                {{ else }}
+                    <a href="{{ .url }}">{{ .name }}</a>
+                {{ end }}
+            {{ end}}
+        </div>
+        {{ end}}
+    </div>
+
+    <a class="all-rights-reserved" href="{{ $footer.Params.footerLink }}">{{ $footer.Params.footerText }}</a>
 </footer>

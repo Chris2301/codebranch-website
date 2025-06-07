@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{ $listCSS.RelPermalink }}" integrity="{{ $listCSS.Data.Integrity }}">
 
 <div class="main-wrapper">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Params.title }}</h1>
     <div>{{ .Content }}</div>
 </div>
 {{ end }}

@@ -1,5 +1,5 @@
 header {
-    background-color: hsl(0, 0%, 20%);
+    background-color: #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,13 +13,18 @@ header {
     min-height: 64px;
     max-width: 1280px;
     width: 100%;
-    margin: 7px auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    border-bottom: black solid 1px;
+}
+.nav-icon {
+    width: 85px;
+    height: 85px;
 }
 
 .nav-button {
-    color: #fff;
+    color: black;
     text-decoration: none;
     padding: 16px;
     transition: background-color 0.8s ease;

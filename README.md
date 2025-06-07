@@ -1,6 +1,9 @@
 https://github.com/imfing/hextra-starter-template?tab=readme-ov-file
 
 
-1. Huidige pagina is schijnbaar 'list'
-2. Toggle hamburger en knoppen
-3. footer indelen
+1. Generic menu options / mobile too
+
+
+Voorbeelden
+Orange https://dribbble.com/shots/23663837-Arkt-UI base
+Orange palette with text in it like 'Websites' https://dribbble.com/shots/18765490-Muzi-Website base
