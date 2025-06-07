@@ -1,7 +1,7 @@
 https://github.com/imfing/hextra-starter-template?tab=readme-ov-file
 
 
-1. Generic menu options / mobile too
+1. homepage
 
 
 Voorbeelden

@@ -30,7 +30,8 @@ main {
 @media only screen and (max-width: 768px) {
     main {
         max-width: 768px;
-        background-color: green;
+        /*background-color: green;*/
+        background-color: #dddddd;
     }
 }
 

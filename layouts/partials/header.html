@@ -11,28 +11,34 @@
 <header>
     <nav class="nav">
 
-        {{ $first := first 1 $pages.Params.pages }}
-        {{ with index $first 0 }}
-            {{ $img := resources.Get "images/codebranch.svg" }}
-            <a href="/">
-                <img src="{{ $img.RelPermalink }}"
-                     alt="Code Branch"
-                     class="nav-icon"
-                >
-            </a>
+        {{ with .Site.GetPage "meta/header" }}
+            {{ range .Params.pages }}
+                {{ if .pageIcon }}
+                    {{ $img := resources.Get "images/codebranch.svg" }}
+                    <a href="{{ .pageUrl }}">
+                        <img src="{{ $img.RelPermalink }}"
+                             alt="Code Branch"
+                             class="nav-icon"
+                        >
+                    </a>
+                {{ else }}
+                    <a class="nav-button desktop-only" href="{{ .pageUrl }}">{{ .pageName }}</a>
+                {{ end }}
+            {{ end }}
         {{ end }}
-
-        <a class="nav-button" href="/">Home</a>
-
-        <a class="nav-button desktop-only" href="/about/">About</a>
-        <a class="nav-button desktop-only" href="/contact/">Contact</a>
 
         <a class="nav-button mobile-only" href="javascript:void(0);" onclick="toggle()">
             <i class="fa fa-bars fa-2xl"></i>
         </a>
     </nav>
     <div class="hamburger-options mobile-only" id="hamburger-options">
-        <a class="nav-button" href="/about/">About</a>
-        <a class="nav-button" href="/contact/">Contact</a>
+        {{ with .Site.GetPage "meta/header" }}
+            {{ range .Params.pages }}
+                {{ if .pageName }}
+                    <a class="nav-button" href="{{ .pageUrl }}">{{ .pageName }}</a>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
     </div>
 </header>

@@ -1,7 +1,7 @@
 ---
 pages: 
-  - pageName: Home
-    pageUrl:
+  - pageName: 
+    pageUrl: "/"
     pageIcon: "codebranch.png"
   - pageName: 'Codebranch'
     pageUrl: '/codebranch'
