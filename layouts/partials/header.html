@@ -1,9 +1,8 @@
 {{ $headerCSS := resources.Get "css/components/header.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $headerCSS.RelPermalink }}" integrity="{{ $headerCSS.Data.Integrity }}">
 
-{{ $js := resources.Get "js/header.js" | resources.Minify | resources.Fingerprint }}
-
 {{ $pages := site.GetPage "meta/header" }}
+{{ $js := resources.Get "js/header.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
 

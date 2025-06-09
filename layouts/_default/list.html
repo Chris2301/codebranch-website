@@ -1,9 +1,10 @@
 {{ define "main" }}
-{{ $listCSS := resources.Get "css/components/list.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $listCSS.RelPermalink }}" integrity="{{ $listCSS.Data.Integrity }}">
+    {{ $listCSS := resources.Get "css/components/list.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $listCSS.RelPermalink }}" integrity="{{ $listCSS.Data.Integrity }}">
 
-<div class="main-wrapper">
-    <h1>{{ .Params.title }}</h1>
-    <div>{{ .Content }}</div>
-</div>
+    <div class="main-wrapper">
+        <p>list</p>
+        <h1>{{ .Params.title }}</h1>
+        <div>{{ .Content }}</div>
+    </div>
 {{ end }}
