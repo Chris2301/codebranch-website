@@ -1,7 +1,7 @@
 https://github.com/imfing/hextra-starter-template?tab=readme-ov-file
 
 
-1. homepage
+1. pagina's invulling geven
 
 
 Voorbeelden

@@ -1,0 +1,18 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $rawWidth := .Get "width" | default "250" }}
+{{ $fitSize := print $rawWidth "x" }}
+{{ $img := resources.Get $src }}
+
+
+{{ if $img }}
+{{ $ext := lower (path.Ext $img.Name) }}
+{{ if eq $ext ".svg" }}
+    <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" loading="lazy" width="{{ $rawWidth }}">
+{{ else }}
+{{ $resized := $img.Fit $fitSize }}
+    <img src="{{ $resized.RelPermalink }}" alt="{{ $alt }}" loading="lazy">
+{{ end }}
+{{ else }}
+    <p>Image not found: {{ $src }}</p>
+{{ end }}

@@ -19,7 +19,13 @@ main {
     max-width: 1280px;
     width: 100%;
     background-color: #dddddd;
-    margin: 64px auto 0;
+    margin: var(--navbar-height) auto 0;
+
+    .main-wrapper {
+        /*Config for all pages*/
+        padding: 2rem;
+        height: 100%;
+    }
 }
 
 /* Medium devices such as tablets (1024px or lesser) */

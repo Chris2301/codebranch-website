@@ -2,6 +2,14 @@
     {{ $styleCSS := resources.Get "css/style.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleCSS.RelPermalink }}" integrity="{{ $styleCSS.Data.Integrity }}">
 
+<!--    &lt;!&ndash;  load images dynamically  &ndash;&gt;-->
+<!--{{ $slug := .File.BaseFileName }}-->
+<!--{{ $imagePath := printf "images/%s/" $slug }}-->
+<!--{{ $images := resources.Match (print $imagePath "*") }}-->
+
+<!--{{ range $images }}-->
+<!--<img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy" />-->
+<!--{{ end }}-->
 
     <div class="main-wrapper">
         <p>single</p>

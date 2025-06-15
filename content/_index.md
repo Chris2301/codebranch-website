@@ -1,5 +1,5 @@
 ---
-title: 'Codebranch'
+title: 'Home'
 headerTitle: 'Codebranch | Consultancy | Web applicaties | Websites | DevOps'
 rotator:
   - item: 'Websites'
