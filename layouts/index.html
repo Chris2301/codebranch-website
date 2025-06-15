@@ -13,20 +13,21 @@
         <div>{{ .Content }}</div>
     </div>
 
+<!--    TODO circle goes over nav bar-->
+    <div class="circle-wrapper">
+        <div class="circle">
+            <div class="rotator">
+                <p class="rotator-description">Wij helpen je met</p>
 
-    <div class="circle">
-
-        <div class="rotator">
-            <p class="rotator-description">Wij helpen je bij</p>
-
-            <div class="rotator-item-wrapper">
-                {{ range .Params.rotator }}
+                <div class="rotator-item-wrapper">
+                    {{ range .Params.rotator }}
                     <p class="rotator-item">{{ .item }}</p>
-                {{ end }}
+                    {{ end }}
+                </div>
             </div>
         </div>
-<!--            //TODO chatgpt vragen hoe dit beter kan in keywords door te vertellen wat ik doe-->
     </div>
+
 </div>
 
 

@@ -16,5 +16,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Show next
         items[current].classList.add('active');
-    }, 2000); // every 2 seconds
+    }, 2500); /*also adjust index.css*/
 });
