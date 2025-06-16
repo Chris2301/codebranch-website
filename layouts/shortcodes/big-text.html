@@ -1,0 +1,8 @@
+<span style="
+    font-size: {{ .Get "size" | default "20px" }};
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0px 1.5px, 1.5px 0px, 1.5px 1.5px;
+">
+{{ .Inner | markdownify }}
+</span>

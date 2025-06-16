@@ -4,8 +4,13 @@
     height: 100%;
 }
 
+.left-panel {
+    margin: 50px auto 15px 15px;
+    padding-right: 25px;
+}
+
 .circle-wrapper {
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1070px) {
         display: none;
     }
 
@@ -45,7 +50,6 @@
 
         font-family: 'Open Sans', sans-serif;
         font-size: 30px;
-        text-transform: uppercase;
     }
 
     .rotator-description {
@@ -63,6 +67,7 @@
         }
 
         font-weight: bold;
+        text-transform: uppercase;
         width: 350px;
         animation: reveal 2.5s infinite; /*also adjust rotator.js*/
     }
