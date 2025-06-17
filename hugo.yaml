@@ -1,4 +1,5 @@
 title: My New Hugo Site
+baseURL: "https://chris2301.github.io/codebranch-website/"
 caches:
   images:
     dir: :cacheDir/images
