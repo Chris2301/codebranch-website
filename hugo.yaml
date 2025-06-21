@@ -1,5 +1,7 @@
-title: My New Hugo Site
+#title: Codebranch website
 baseURL: "https://chris2301.github.io/codebranch-website/"
+#relativeURLs: true
+canonifyURLs: true
 caches:
   images:
     dir: :cacheDir/images

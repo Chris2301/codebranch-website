@@ -9,14 +9,14 @@
             <p>{{ .groupName }}</p>
             {{ range .fields }}
                 {{ if .iconName }}
-                    <a href="{{ .url }}"><i class="{{ .iconName }}"></i>{{ .name }}</a>
+                    <a href="{{ .url | relURL }}"><i class="{{ .iconName }}"></i>{{ .name }}</a>
                 {{ else }}
-                    <a href="{{ .url }}">{{ .name }}</a>
+                    <a href="{{ .url | relURL }}">{{ .name }}</a>
                 {{ end }}
             {{ end}}
         </div>
         {{ end}}
     </div>
 
-    <a class="all-rights-reserved" href="{{ $footer.Params.footerLink }}">{{ $footer.Params.footerText }}</a>
+    <a class="all-rights-reserved" href="{{ $footer.Params.footerLink | relURL }}">{{ $footer.Params.footerText }}</a>
 </footer>

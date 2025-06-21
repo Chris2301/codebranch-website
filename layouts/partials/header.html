@@ -21,7 +21,7 @@
                         >
                     </a>
                 {{ else }}
-                    <a class="nav-button desktop-only" href="{{ .pageUrl }}">{{ .pageName }}</a>
+                    <a class="nav-button desktop-only" href="{{ .pageUrl | relURL }}">{{ .pageName }}</a>
                 {{ end }}
             {{ end }}
         {{ end }}
@@ -34,7 +34,7 @@
         {{ with .Site.GetPage "meta/header" }}
             {{ range .Params.pages }}
                 {{ if .pageName }}
-                    <a class="nav-button" href="{{ .pageUrl }}">{{ .pageName }}</a>
+                    <a class="nav-button" href="{{ .pageUrl | relURL }}">{{ .pageName }}</a>
                 {{ end }}
             {{ end }}
         {{ end }}
