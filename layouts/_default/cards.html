@@ -7,7 +7,9 @@
     <div class="card-wrapper">
         {{ range .Params.cards }}
         <div class="card">
-            <img src="{{ .image }}">
+            {{ with resources.Get .image }}
+                <img src="{{ .RelPermalink }}">
+            {{ end }}
             <h2>{{ .title }}</h2>
             <p>{{ .subtext }}</p>
         </div>
