@@ -5,3 +5,6 @@ canonifyURLs: true
 caches:
   images:
     dir: :cacheDir/images
+
+
+enableEmoji: true

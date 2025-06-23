@@ -7,11 +7,9 @@ Er ligt focus op het MKB en kiezen graag voor tooling en hosting zo dicht mogeli
 
 Gewoon goed is waar we voor staan. Dit doen we door pragmatisch te werk te gaan en goede communicatie.
 
-Voor de techneuten onder ons; het KISS (Keep it simple, stupid) principe is wat we graag zien en refereren we vaak naar de 5 idealen van DevOps.
-1. Lokaal en simpel
-2. Focus, flow en plezier
-3. Elke dag structureel verbeteren
-4. Pyschologische veiligheid
-5. Klantgedreven
-
-//TODO vervangen cijfers met icons
+Voor de techneuten onder ons; KISS (Keep it simple, stupid) is wat we graag zien en refereren we vaak naar de 5 idealen van DevOps.
+* :round_pushpin: Lokaal en simpel
+* :tada: Focus, flow en plezier
+* :wrench: Elke dag structureel verbeteren
+* :shield: Psychologische veiligheid
+* :coffee: Klantgedreven

@@ -1,0 +1,16 @@
+.content-wrapper {
+    position: relative;
+    div::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    img {
+        float: right;
+        margin: 0 0 1rem 2rem;
+        height: auto;
+        shape-outside: margin-box;
+    }
+}
+

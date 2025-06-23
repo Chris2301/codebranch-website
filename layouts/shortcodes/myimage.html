@@ -10,7 +10,7 @@
 {{ if eq $ext ".svg" }}
     <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" loading="lazy" width="{{ $rawWidth }}">
 {{ else }}
-{{ $resized := $img.Fit $fitSize }}
+{{ $resized := $img.Resize $fitSize }}
     <img src="{{ $resized.RelPermalink }}" alt="{{ $alt }}" loading="lazy">
 {{ end }}
 {{ else }}
