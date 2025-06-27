@@ -1,9 +1,12 @@
 ---
 title: 'Webapplicaties'
 layout: 'services'
-image: "images/services/globale_tech_stack.png"
-size: "600"
+images: 
+  - "images/services/globale_tech_stack.png"
+  - "images/services/hugo_all.png"
+  - "images/services/hugo_fast.png"
+#size: "600"
 ---
 Hello web
 
-//TODO png is niet goed, teveel whitespace
+//TODO The flow & sizing is nog niet goed
