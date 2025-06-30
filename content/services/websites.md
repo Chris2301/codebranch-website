@@ -1,7 +1,8 @@
 ---
 title: 'Websites'
 layout: 'services'
-image: "images/services/hugo_all.png"
+images: 
+  - "images/services/hugo_all.png"
 ---
 
 ### YeS

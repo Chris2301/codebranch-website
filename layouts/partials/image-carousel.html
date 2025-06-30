@@ -1,0 +1,84 @@
+{{ $isSingleImage := eq (len .images) 1 }}
+
+<div class="rotator-container"
+     style="
+     --duration: {{ .duration }}s;
+     width: {{ .width }}px;
+     height: {{ .height }}px;
+">
+    {{ range $img := .images }}
+        {{ with resources.Get $img }}
+            <img src="{{ .RelPermalink }}" class="carousel-item" style="max-width: {{ $.width }}px">
+        {{ end }}
+    {{ end }}
+</div>
+
+{{ if not $isSingleImage }}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const items = document.querySelectorAll('.carousel-item');
+        if (!items.length) return;
+
+        let current = 0;
+
+        items[current].classList.add('active');
+
+        setInterval(() => {
+            items[current].classList.remove('active');
+            current = (current + 1) % items.length;
+            items[current].classList.add('active');
+        }, {{ mul .duration 1000 }});
+    });
+</script>
+{{ end }}
+
+<style>
+    .carousel-item {
+
+        width: 100%;
+        height: 100%;
+        display: none;
+    /*  animation is needed when more pictures  */
+    {{ if not $isSingleImage }}
+        animation: slideFade var(--duration, 5s) ease-in-out forwards;
+        z-index: 1;
+        &.active {
+            display: block;
+            z-index: 2;
+        }
+    {{ end }}
+    /*  no animation needed and only one picture visible  */
+    {{ if $isSingleImage }}
+        z-index: 2;
+        display: block;
+    {{ end }}
+
+    }
+
+    @keyframes slideFade {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        10% {
+            transform: translateX(50%);
+            opacity: 0;
+        }
+        20% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        80% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        90% {
+            transform: translateX(-50%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+    }
+</style>

@@ -13,13 +13,16 @@
         <h1>{{ .Title }}</h1>
         <div class="content-wrapper">
 
-            <div class="rotator-container">
-                {{ range $img := .Page.Params.images }}
-                    {{ with resources.Get $img }}
-                        <img src="{{ .RelPermalink }}" class="rotator-item" style="max-width: {{ $size }}px">
-                    {{ end }}
-                {{ end }}
-            </div>
+
+            <!--  Image Carousel -->
+            {{ partial "image-carousel.html" (dict
+                "images" .Page.Params.images
+                "width" 300
+                "height" 250
+                "duration" 5.5
+            ) }}
+
+
             <div>
                 {{ .Content }}
             </div>
