@@ -2,7 +2,7 @@
 title: 'Websites'
 layout: 'services'
 images: 
-  - "images/services/hugo_all.png"
+  - "images/services/website_2.png"
 ---
 
 ### YeS
