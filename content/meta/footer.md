@@ -10,6 +10,9 @@ links:
         - name: "Services"
           url: "/services"
           iconName:
+        - name: "Ervaring"
+          url: "/experience"
+          iconName:
         - name: "Blogs"
           url: "/blogs"
           iconName:        

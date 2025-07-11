@@ -1,0 +1,31 @@
+{{ define "main" }}
+<!--{{ $styleCSS := resources.Get "css/style.css" | minify | fingerprint }}-->
+<!--<link rel="stylesheet" href="{{ $styleCSS.RelPermalink }}" integrity="{{ $styleCSS.Data.Integrity }}">-->
+<!--{{ $servicesCSS := resources.Get "css/components/services.css" | minify | fingerprint }}-->
+<!--<link rel="stylesheet" href="{{ $servicesCSS.RelPermalink }}" integrity="{{ $servicesCSS.Data.Integrity }}">-->
+<!--{{ $js := resources.Get "js/rotator.js" | resources.Minify | resources.Fingerprint }}-->
+<!--<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>-->
+
+<!--{{ $size := .Params.size }}-->
+
+
+<div class="main-wrapper">
+    <h1>{{ .Title }}</h1>
+    <div class="content-wrapper">
+
+
+        <!--  Expansion Panel -->
+        {{ partial "expansion-panel.html" (dict
+            "images" .Page.Params.images
+            "width" 300
+            "height" 250
+            "duration" 5.5
+        ) }}
+
+
+        <div>
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}

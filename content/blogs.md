@@ -1,4 +1,4 @@
 ---
 title: 'Blogs'
 ---
-Welcome to blogs
+De blogs moeten nog toegevoegd worden

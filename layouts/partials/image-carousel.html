@@ -5,6 +5,7 @@
      --duration: {{ .duration }}s;
      width: {{ .width }}px;
      height: {{ .height }}px;
+     overflow: hidden;
 ">
     {{ range $img := .images }}
         {{ with resources.Get $img }}

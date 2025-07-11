@@ -7,57 +7,17 @@ cards:
     subtext: 'Snelle websites en simpel zelf content aanpassen'
   - card: 'Webapplicaties'
     image: '/images/services/webapplicatie_1.png'
-    subtext: 'subtitle'
+    subtext: 'Ontwikkeling en onderhoud'
   - card: 'Cloud'
     image: '/images/services/cloud_1.png'
-    subtext: 'subtitle'
+    subtext: 'Ontwikkeling en onderhoud met kennis van meerdere platformen'
   - card: 'Complete DevOps'
     image: '/images/services/devops_1.png'
-    subtext: 'subtitlesubtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle'
+    subtext: 'Zorgen voor een logische waarde stroom. Van idee tot deployment naar productie'
   - card: 'Security'
     image: '/images/services/security_1.png'
-    subtext: 'subtitle'
+    subtext: 'Zorgeloos je apps en gegevens beheren'
 ---
 //TODO rechts een mooie diagram van onze tooling
 
-[//]: # ()
-[//]: # (### Websites)
 
-[//]: # ()
-[//]: # (Sneller dan elke wordpress pagina is wat HUGO beloofd en daarom bouwen wij websites met HUGO. Een prachtig framework wat met zijn )
-
-[//]: # (snelheid eigenlijk al 2-0 voorstaat op gebied van online vindbaarheid &#40;SEO&#41;. Iets wat we ook belangrijk vinden. )
-
-[//]: # ()
-[//]: # (We leveren het samen met een CMS &#40;content management system&#41; zodat je heel simpel de inhoud van je eigen website kunt veranderen.)
-
-[//]: # (Niet zoeken in een labyrint van opties, maar recht voor zonder poespas je content aanpassen.)
-
-[//]: # ()
-[//]: # (Waarom kiezen wij voor HUGO en niet voor wordpress? )
-
-[//]: # (* Simpelweg omdat we fan zijn van hoe efficient en minimalistisch het is)
-
-[//]: # (* minder gevoelig is voor externe veranderingen &#40;plugin updates, browser updates&#41;)
-
-[//]: # ()
-[//]: # ()
-[//]: # (KORTER)
-
-[//]: # ()
-[//]: # (### Webapplicaties)
-
-[//]: # ()
-[//]: # ()
-[//]: # (### Cloud)
-
-[//]: # ()
-[//]: # (### DevOps)
-
-[//]: # ()
-[//]: # ()
-[//]: # (### Security)
-
-[//]: # ()
-[//]: # ()
-[//]: # ({{< myimage src="images/services/codebranch1.svg" alt="CodeBranch logo" width="450" >}})

@@ -3,8 +3,6 @@
     <link rel="stylesheet" href="{{ $styleCSS.RelPermalink }}" integrity="{{ $styleCSS.Data.Integrity }}">
     {{ $servicesCSS := resources.Get "css/components/services.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $servicesCSS.RelPermalink }}" integrity="{{ $servicesCSS.Data.Integrity }}">
-    {{ $js := resources.Get "js/rotator.js" | resources.Minify | resources.Fingerprint }}
-    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
     {{ $size := .Params.size }}
 

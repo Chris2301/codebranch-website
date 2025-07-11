@@ -9,6 +9,9 @@ pages:
   - pageName: 'Services'
     pageUrl: '/services'
     pageIcon:
+  - pageName: 'Ervaring'
+    pageUrl: '/experience'
+    pageIcon:
   - pageName: 'Blogs'
     pageUrl: '/blogs'
     pageIcon:
