@@ -1,0 +1,80 @@
+{{ range .pages }}
+<div class="expansion-panel">
+    <div class="expansion-panel-header"
+         aria-expanded="false"
+         aria-controls="panel-content-{{ .File.BaseFileName }}">
+        <div class="panel-title">{{ .Title }}</div>
+        <i class="panel-icon fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="expansion-panel-content"
+         id="panel-content-{{ .File.BaseFileName }}"
+         aria-hidden="true">
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}
+
+<script>
+    document.querySelectorAll('.expansion-panel').forEach(panel => {
+        const header = panel.querySelector('.expansion-panel-header');
+        const content = panel.querySelector('.expansion-panel-content');
+        const icon = panel.querySelector('.panel-icon');
+
+        function togglePanel() {
+            const isOpen = content.classList.contains('open');
+
+            if (isOpen) { // Close
+                content.style.maxHeight = null;
+                content.classList.remove('open');
+                icon.classList.remove('fa-chevron-up')
+                icon.classList.add('fa-chevron-down')
+                header.setAttribute('aria-expanded', 'false');
+                content.setAttribute('aria-hidden', 'true');
+            } else { //Open
+                content.classList.add('open');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.classList.remove('fa-chevron-down')
+                icon.classList.add('fa-chevron-up')
+                header.setAttribute('aria-expanded', 'true');
+                content.setAttribute('aria-hidden', 'false');
+            }
+        }
+
+        header.addEventListener('click', togglePanel);
+    });
+</script>
+
+<style>
+    .expansion-panel {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 300px;
+        font-family: Arial, sans-serif;
+        margin: 20px auto;
+    }
+    .expansion-panel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 12px 16px;
+        background-color: #f5f5f5;
+        user-select: none;
+    }
+    .panel-title {
+        font-weight: 600;
+    }
+    .panel-description {
+        font-size: 0.9em;
+        color: #666;
+    }
+    .expansion-panel-content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        padding: 0 16px;
+    }
+    .expansion-panel-content.open {
+        padding: 12px 16px;
+    }
+</style>
