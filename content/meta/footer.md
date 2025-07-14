@@ -13,6 +13,9 @@ links:
         - name: "Ervaring"
           url: "/experience"
           iconName:
+        - name: "Technologieën"
+          url: "/tech-stack"
+          iconName:
         - name: "Blogs"
           url: "/blogs"
           iconName:        

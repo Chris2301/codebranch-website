@@ -1,4 +1,4 @@
-{{ range .pages }}
+{{ range sort .pages "Weight" }}
 <div class="expansion-panel">
     <div class="expansion-panel-header"
          aria-expanded="false"
@@ -47,34 +47,36 @@
 <style>
     .expansion-panel {
         border: 1px solid #ccc;
-        border-radius: 4px;
-        width: 300px;
-        font-family: Arial, sans-serif;
+        border-radius: 10px;
+        width: 100%;
         margin: 20px auto;
-    }
-    .expansion-panel-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        padding: 12px 16px;
         background-color: #f5f5f5;
-        user-select: none;
-    }
-    .panel-title {
-        font-weight: 600;
-    }
-    .panel-description {
-        font-size: 0.9em;
-        color: #666;
-    }
-    .expansion-panel-content {
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3s ease, padding 0.3s ease;
-        padding: 0 16px;
-    }
-    .expansion-panel-content.open {
-        padding: 12px 16px;
+
+        &:hover {
+            background: #fafafa;
+        }
+
+        .expansion-panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 12px 16px;
+            user-select: none;
+
+            .panel-title {
+                font-weight: bold;
+            }
+        }
+
+        .expansion-panel-content {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 16px;
+        }
+        .expansion-panel-content.open {
+            padding: 12px 16px;
+        }
     }
 </style>

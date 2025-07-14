@@ -12,6 +12,9 @@ pages:
   - pageName: 'Ervaring'
     pageUrl: '/experience'
     pageIcon:
+  - pageName: 'Technologieën'
+    pageUrl: '/tech-stack'
+    pageIcon:
   - pageName: 'Blogs'
     pageUrl: '/blogs'
     pageIcon:

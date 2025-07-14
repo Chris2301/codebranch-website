@@ -16,7 +16,7 @@ werken volgens de [DevOps Idealen](/codebranch/).
 Het kan als met personen die alles technisch kan, maar ook in een team met mensen die elkaar technisch aanvullen.
 
 We weten goed dat DevOps bij opdrachtomschrijvingen iets anders betekent en het over tooling gaat. Codebranch heeft ervaring met de tooling 
-die nodig is voor een goede DevOps omgeving. Voor een complete lijst zie [ervaring](/experience/)
+die nodig is voor een goede DevOps omgeving. Voor een complete lijst zie [technologieën](/tech-stack/)
 
 **CI/CD** \
 Github Actions, Gitlab CI/CD, Azure Pipelines, ArgoCD

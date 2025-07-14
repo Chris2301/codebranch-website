@@ -15,7 +15,7 @@ inzetbaar en stempels als full-stack software engineering en DevOps engineering 
 Niet pretenderen ergens expert in te zijn, maar echt een manusje van alles wat in het Engels mooier omschreven word met '_jack of all trades master of none but oftentimes better than a master of one_'.
 Wat onbekend is zoeken we uit. 
  
-Hieronder zie je grofweg de technologieën die gebruikt worden, voor een complete lijst kun je [hier](/experience/) kijken.
+Hieronder zie je grofweg de technologieën die gebruikt worden, voor een complete lijst kun je [hier](/tech-stack/) kijken.
 
 **Frontend** \
 Angular, Typescript, Html, Css, Javascript en een beetje React
