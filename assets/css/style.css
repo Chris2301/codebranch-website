@@ -24,8 +24,9 @@ main {
 
     .main-wrapper {
         /*Config for all pages*/
-        padding: 2rem;
+        margin: 20px;
         height: 100%;
+        display: flex;
     }
 }
 

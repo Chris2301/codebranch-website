@@ -1,8 +1,21 @@
 {{ define "main" }}
+{{ $contactCSS := resources.Get "css/components/contact.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $contactCSS.RelPermalink }}" integrity="{{ $contactCSS.Data.Integrity }}">
 
-    <div>{{ .Content }}</div>
+
+<div class="main-wrapper">
+
+    <div class="contact-content">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+
+        {{ with .Page.Params.linkedIn }}
+            <a href="{{ . }}"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+        {{ end }}
+    </div>
 
     {{ with .Page.Params.mapsUrl }}
+    <div class="contact-map">
         <iframe
             title="Google Maps"
             src="{{ . }}"
@@ -13,7 +26,8 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+    </div>
     {{ end }}
-
+</div>
 {{ end }}
 

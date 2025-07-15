@@ -1,5 +1,5 @@
 ---
-title: 'Technologieën'
+title: 'Toolbox'
 ---
 **Programmeertalen** \
 Kotlin, Java, Typescript/Javascript

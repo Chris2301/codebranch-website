@@ -3,8 +3,9 @@
     <link rel="stylesheet" href="{{ $styleCSS.RelPermalink }}" integrity="{{ $styleCSS.Data.Integrity }}">
 
     <div class="main-wrapper">
-        <p>single</p>
-        <h1>{{ .Title }}</h1>
-        <div>{{ .Content }}</div>
+        <div>
+            <h1>{{ .Title }}</h1>
+            <div>{{ .Content }}</div>
+        </div>
     </div>
 {{ end }}

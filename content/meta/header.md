@@ -12,12 +12,12 @@ pages:
   - pageName: 'Ervaring'
     pageUrl: '/experience'
     pageIcon:
-  - pageName: 'Technologieën'
+  - pageName: 'Toolbox'
     pageUrl: '/tech-stack'
     pageIcon:
-  - pageName: 'Blogs'
-    pageUrl: '/blogs'
-    pageIcon:
+#  - pageName: 'Blogs'
+#    pageUrl: '/blogs'
+#    pageIcon:
   - pageName: 'Contact'
     pageUrl: '/contact'
     pageIcon:

@@ -8,15 +8,17 @@
 
 
 <div class="main-wrapper">
-    <h1>{{ .Title }}</h1>
-    <div class="content-wrapper">
-        <div>
-            {{ .Content }}
-        </div>
-        <!--  Expansion Panel -->
-        {{ partial "expansion-panel.html" (dict
+    <div>
+        <h1>{{ .Title }}</h1>
+        <div class="content-wrapper">
+            <div>
+                {{ .Content }}
+            </div>
+            <!--  Expansion Panel -->
+            {{ partial "expansion-panel.html" (dict
             "pages" .Pages
-        ) }}
+            ) }}
+        </div>
     </div>
 </div>
 {{ end }}

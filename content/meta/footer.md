@@ -13,12 +13,12 @@ links:
         - name: "Ervaring"
           url: "/experience"
           iconName:
-        - name: "Technologieën"
+        - name: "Toolbox"
           url: "/tech-stack"
           iconName:
-        - name: "Blogs"
-          url: "/blogs"
-          iconName:        
+#        - name: "Blogs"
+#          url: "/blogs"
+#          iconName:        
         - name: "Contact"
           url: "/contact"
           iconName:

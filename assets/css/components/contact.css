@@ -1,0 +1,31 @@
+.main-wrapper {
+    display: flex;
+    height: 100%;
+    margin: 20px;
+}
+
+.contact-content {
+    margin-right: 15px;
+    a {
+        color: black;
+        text-decoration: none;
+        margin-bottom: 5px;
+        &:hover {
+            text-decoration: underline;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.contact-map {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    @media (max-width: 925px) {
+        display: none;
+    }
+}
