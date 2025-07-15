@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+    <div>{{ .Content }}</div>
+
+    {{ with .Page.Params.mapsUrl }}
+        <iframe
+            title="Google Maps"
+            src="{{ . }}"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    {{ end }}
+
+{{ end }}
+
