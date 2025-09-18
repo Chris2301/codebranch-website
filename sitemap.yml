@@ -29,11 +29,6 @@ pages:
       - title: "Security"
         path: "/services/security"
         filePath: "content/services/security.md"
-    children:
-      - title: "WebsitesExample" # Delete
-        path: "/services/websites"
-        filePath: "content/services/websites.md"
-        emptyContent: "false"
 
   - title: "Ervaring"
     path: "/ervaring"
